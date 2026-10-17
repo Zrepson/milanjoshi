@@ -1456,6 +1456,52 @@ html[data-theme="light"] body {
   color: var(--text);
 }
 
+.history-placeholder {
+  min-height: calc(100vh - 180px);
+  display: flex;
+  align-items: center;
+  padding: 96px 0 120px;
+  background: var(--background);
+}
+
+.history-placeholder-inner {
+  width: 100%;
+}
+
+.history-placeholder h1 {
+  max-width: 760px;
+  margin: 24px 0 28px;
+  font-size: clamp(58px, 9vw, 112px);
+  line-height: .94;
+  letter-spacing: -.075em;
+}
+
+.history-placeholder h1 span {
+  color: var(--gold);
+}
+
+.history-placeholder-copy {
+  max-width: 520px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.history-placeholder-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 42px;
+}
+
+.history-placeholder-status {
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
 html[data-theme="light"] .navbar,
 html[data-theme="light"] .navbar-meta,
 html[data-theme="light"] .intro-strip,
