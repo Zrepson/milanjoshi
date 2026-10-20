@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PhotoLightboxGallery from "@/components/PhotoLightboxGallery";
+import InteractiveTimeline from "@/components/work/InteractiveTimeline";
 
 export const metadata = {
   title: "Work | Milan Joshi",
@@ -203,18 +204,7 @@ export default function WorkPage() {
               ways to contribute.
             </p>
           </div>
-          <div className="work-timeline">
-            {journey.map((item) => (
-              <article className="work-timeline-item" key={item.number}>
-                <span className="work-timeline-number">{item.number}</span>
-                <span className="work-timeline-period">{item.period}</span>
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </div>
-              </article>
-            ))}
-          </div>
+          <InteractiveTimeline />
         </div>
       </section>
 
