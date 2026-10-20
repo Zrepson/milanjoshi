@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import NavbarSearch from "./NavbarSearch";
 
 const nepaliMonthStarts = [
   { date: "2026-04-14", month: "बैशाख", year: 2083 },
@@ -244,6 +245,7 @@ export default function Navbar() {
               <Link href="/impact">{labels[6]}</Link>
               <Link href="/contact">{labels[7]}</Link>
             </nav>
+            <NavbarSearch language={language} />
           </div>
         </div>
       </header>

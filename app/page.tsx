@@ -1,4 +1,5 @@
 import Link from "next/link";
+import HomeStartupExperience from "@/components/HomeStartupExperience";
 
 const services = [
   {
@@ -48,6 +49,7 @@ export default function Home() {
               <Link href="/work" className="button button-primary">Explore my work <span aria-hidden="true">↗</span></Link>
               <Link href="/about" className="text-link">A little about me <span aria-hidden="true">→</span></Link>
             </div>
+            <HomeStartupExperience />
             <div className="hero-note"><span>BASED IN NEPAL</span><span className="note-line" /><span>WORKING EVERYWHERE</span></div>
           </div>
           <div className="hero-art" aria-label="Abstract golden orbital artwork">

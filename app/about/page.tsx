@@ -166,7 +166,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="about-beliefs-section">
+      <section className="about-beliefs-section" id="beliefs">
         <div className="container">
           <div className="section-heading about-beliefs-heading">
             <div>
@@ -190,7 +190,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="about-gallery-section">
+      <section className="about-gallery-section" id="gallery">
         <div className="container">
           <div className="about-gallery-heading">
             <div>
