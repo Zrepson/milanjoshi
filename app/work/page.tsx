@@ -1,10 +1,7 @@
 import Link from "next/link";
 import PhotoLightboxGallery from "@/components/PhotoLightboxGallery";
-<<<<<<< Updated upstream
 import InteractiveTimeline from "@/components/work/InteractiveTimeline";
-=======
 import { createPageMetadata } from "@/lib/seo";
->>>>>>> Stashed changes
 
 export const metadata = createPageMetadata(
   "Work | Milan Joshi",

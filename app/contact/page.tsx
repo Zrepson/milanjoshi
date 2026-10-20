@@ -1,17 +1,17 @@
-import { createPageMetadata } from "@/lib/seo";
+import ContactForm from "@/components/contact/ContactForm";
 
-export const metadata = createPageMetadata(
-  "Contact | Milan Joshi",
-  "Get in touch with Milan Joshi about web development, projects, digital strategy or life insurance.",
-  "/contact"
-);
+export const metadata = {
+  title: "Contact | Milan Joshi",
+  description:
+    "Get in touch with Milan Joshi about web development, projects, digital strategy or life insurance.",
+};
 
 export default function ContactPage() {
   return (
     <>
       <section className="hero">
         <div className="container">
-          <p className="eyebrow">CONTACT</p>
+          <p className="eyebrow">CONTACT · BHAKTAPUR, NEPAL</p>
 
           <h1>
             Let&apos;s <span>connect.</span>
@@ -19,42 +19,67 @@ export default function ContactPage() {
 
           <p className="hero-description">
             Have an idea, project or question? I&apos;d love to hear about it.
-            Reach out and let&apos;s start a conversation.
+            Reach out through the verified form below or connect via email, LinkedIn, or WhatsApp.
           </p>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section contact-section">
         <div className="container">
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">GET IN TOUCH</p>
-              <h2>Start a conversation.</h2>
+          <div className="contact-layout-grid">
+            {/* Validated Contact Form */}
+            <div className="contact-form-column">
+              <ContactForm />
             </div>
-            <p>
-              Whether it&apos;s a website, a project plan or a life insurance
-              question — I&apos;m here to help.
-            </p>
-          </div>
 
-          <div className="explore-grid">
-            <a href="mailto:mail@milanjoshi.com.np" className="explore-card">
-              <h3>Email</h3>
-              <p>The best way to reach me for project inquiries.</p>
-              <span className="contact-card-detail">mail@milanjoshi.com.np →</span>
-            </a>
+            {/* Direct Connect Options */}
+            <aside className="contact-direct-column">
+              <div className="section-heading">
+                <div>
+                  <p className="eyebrow">DIRECT CHANNELS</p>
+                  <h2>Quick contact.</h2>
+                </div>
+                <p>
+                  Prefer direct communication? Reach out via any of these channels anytime.
+                </p>
+              </div>
 
-            <a href="https://linkedin.com/in/milanjoshi18" className="explore-card" target="_blank" rel="noopener noreferrer">
-              <h3>LinkedIn</h3>
-              <p>Connect professionally and view my background.</p>
-              <span className="contact-card-detail">View LinkedIn profile →</span>
-            </a>
+              <div className="contact-direct-cards">
+                <a href="mailto:mail@milanjoshi.com.np" className="explore-card contact-direct-card">
+                  <h3>Email</h3>
+                  <p>The best way to reach me for project inquiries and detailed briefs.</p>
+                  <span className="contact-card-detail">mail@milanjoshi.com.np →</span>
+                </a>
 
-            <a href="https://wa.me/9779823267863" className="explore-card" target="_blank" rel="noopener noreferrer">
-              <h3>WhatsApp</h3>
-              <p>Message me directly about a project or question.</p>
-              <span className="contact-card-detail">+977 982-326-7863 →</span>
-            </a>
+                <a
+                  href="https://linkedin.com/in/milanjoshi18"
+                  className="explore-card contact-direct-card"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3>LinkedIn</h3>
+                  <p>Connect professionally, explore recommendations, and review experience.</p>
+                  <span className="contact-card-detail">View LinkedIn profile →</span>
+                </a>
+
+                <a
+                  href="https://wa.me/9779823267863"
+                  className="explore-card contact-direct-card"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3>WhatsApp</h3>
+                  <p>Message me directly for timely project questions or consultations.</p>
+                  <span className="contact-card-detail">+977 982-326-7863 →</span>
+                </a>
+
+                <div className="contact-location-card">
+                  <span className="eyebrow">BASE LOCATION</span>
+                  <p className="contact-location-city">Bhaktapur · Kathmandu Valley</p>
+                  <p className="contact-location-sub">Nepal · Time Zone: UTC+05:45 (NPT)</p>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
