@@ -1,11 +1,12 @@
 import Link from "next/link";
 import EngagementCarousel from "@/components/work/EngagementCarousel";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Services | Milan Joshi",
-  description:
-    "Web development, project coordination, digital strategy and life insurance guidance from Milan Joshi.",
-};
+export const metadata = createPageMetadata(
+  "Services | Milan Joshi",
+  "Web development, project coordination, digital strategy and life insurance guidance from Milan Joshi.",
+  "/services"
+);
 
 type ServiceOffering = {
   number: string;

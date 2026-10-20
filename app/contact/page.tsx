@@ -1,8 +1,10 @@
-export const metadata = {
-  title: "Contact | Milan Joshi",
-  description:
-    "Get in touch with Milan Joshi about web development, projects, digital strategy or life insurance.",
-};
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata(
+  "Contact | Milan Joshi",
+  "Get in touch with Milan Joshi about web development, projects, digital strategy or life insurance.",
+  "/contact"
+);
 
 export default function ContactPage() {
   return (
@@ -59,4 +61,3 @@ export default function ContactPage() {
     </>
   );
 }
-

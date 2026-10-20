@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import { createPageMetadata } from "@/lib/seo";
 
 
-export const metadata = {
-  title: "Credentials | Milan Joshi",
-  description:
-    "Experience, certifications and professional capabilities of Milan Joshi.",
-};
+export const metadata = createPageMetadata(
+  "Credentials | Milan Joshi",
+  "Experience, certifications and professional capabilities of Milan Joshi.",
+  "/credentials"
+);
 
 const capabilityCredentials = [
   {

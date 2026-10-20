@@ -1,12 +1,16 @@
 import Link from "next/link";
 import PhotoLightboxGallery from "@/components/PhotoLightboxGallery";
+<<<<<<< Updated upstream
 import InteractiveTimeline from "@/components/work/InteractiveTimeline";
+=======
+import { createPageMetadata } from "@/lib/seo";
+>>>>>>> Stashed changes
 
-export const metadata = {
-  title: "Work | Milan Joshi",
-  description:
-    "Professional experience, project contributions, organizational engagements and field events from Milan Joshi's work.",
-};
+export const metadata = createPageMetadata(
+  "Work | Milan Joshi",
+  "Professional experience, project contributions, organizational engagements and field events from Milan Joshi's work.",
+  "/work"
+);
 
 const journey = [
   {

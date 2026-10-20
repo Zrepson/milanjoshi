@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Impact | Milan Joshi",
-  description:
-    "Selected contributions across public health, project coordination, sustainable development and emerging technology.",
-};
+export const metadata = createPageMetadata(
+  "Impact | Milan Joshi",
+  "Selected contributions across public health, project coordination, sustainable development and emerging technology.",
+  "/impact"
+);
 
 const contributions = [
   {

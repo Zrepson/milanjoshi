@@ -1,11 +1,12 @@
 import Link from "next/link";
 import PhotoLightboxGallery from "@/components/PhotoLightboxGallery";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "About | Milan Joshi",
-  description:
-    "Meet Milan Joshi: rooted in Bhaktapur, Nepal, curious about people, places, technology and the ideas shaping the future.",
-};
+export const metadata = createPageMetadata(
+  "About | Milan Joshi",
+  "Meet Milan Joshi: rooted in Bhaktapur, Nepal, curious about people, places, technology and the ideas shaping the future.",
+  "/about"
+);
 
 const principles = [
   {

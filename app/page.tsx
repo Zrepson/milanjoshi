@@ -22,8 +22,8 @@ const services = [
   },
   {
     number: "04",
-    title: "Life insurance Service",
-    description: "Life Insurance ServicesHelping individuals and families understand life insurance, financial protection, and long-term planning through professional advisory services.",
+    title: "Life insurance guidance",
+    description: "Helping individuals and families understand life insurance, financial protection and long-term planning through professional guidance.",
     label: "Understand · Choose · Protect",
   },
 ];
