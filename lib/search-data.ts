@@ -204,6 +204,16 @@ export const searchableItems: SearchItem[] = [
 
   // --- PROJECTS & WORK ---
   {
+    id: "proj-career-analytics",
+    title: "Career Growth & Project Analytics (Recharts Visualizer)",
+    category: "projects",
+    categoryLabel: "Projects & Work",
+    page: "Work",
+    href: "/work#career-growth",
+    description: "Interactive data visualization of 18+ projects and initiatives across timeline, 5 sectors, and core delivery disciplines using Recharts.",
+    keywords: ["analytics", "charts", "recharts", "visualization", "career growth", "timeline", "sectors", "projects", "graph", "statistics"],
+  },
+  {
     id: "proj-mission-oxygen",
     title: "Mission Oxygen Initiative",
     category: "projects",
@@ -314,6 +324,26 @@ export const searchableItems: SearchItem[] = [
     href: "/services",
     description: "A three-phase approach starting with listening and clear scoping, agreed delivery plans, and reliable follow-through.",
     keywords: ["process", "understand", "plan", "deliver", "methodology", "how we work"],
+  },
+  {
+    id: "service-faq-consulting",
+    title: "FAQ: Consulting Process & Engagement Kickoff",
+    category: "services",
+    categoryLabel: "Services",
+    page: "Services",
+    href: "/services#faq",
+    description: "Common questions regarding discovery sessions, 48-hour scope summaries, milestones, deliverables, and remote collaboration.",
+    keywords: ["faq", "consulting process", "kickoff", "milestones", "scope", "pricing", "questions", "timeline"],
+  },
+  {
+    id: "service-faq-insurance",
+    title: "FAQ: Life Insurance Guidance (LIC Nepal)",
+    category: "services",
+    categoryLabel: "Services",
+    page: "Services",
+    href: "/services#faq",
+    description: "Common questions about zero-fee insurance consultations, KYC documents, policy selection, bonuses, and claims assistance under LIC Nepal.",
+    keywords: ["faq", "insurance questions", "lic nepal fee", "documents needed", "claims", "bonus", "coverage", "guarantee"],
   },
   {
     id: "service-engagements",

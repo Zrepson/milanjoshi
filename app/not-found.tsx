@@ -1,13 +1,12 @@
-"use client";
-
-import { useEffect } from "react";
 import Link from "next/link";
 import { Home, Compass, MessageSquare } from "lucide-react";
 
+export const metadata = {
+  title: "Page Not Found (404) | Milan Joshi",
+  description: "The requested page could not be found.",
+};
+
 export default function NotFound() {
-  useEffect(() => {
-    document.title = "Page Not Found (404) | Milan Joshi";
-  }, []);
 
   return (
     <div className="not-found-container py-16">

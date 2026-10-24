@@ -1,6 +1,8 @@
 import Link from "next/link";
 import PhotoLightboxGallery from "@/components/PhotoLightboxGallery";
 import InteractiveTimeline from "@/components/work/InteractiveTimeline";
+import ProjectGrowthVisualizer from "@/components/work/ProjectGrowthVisualizer";
+import ImpactKpiSection from "@/components/work/ImpactKpiSection";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata(
@@ -123,6 +125,9 @@ export default function WorkPage() {
         </div>
       </section>
 
+      {/* Project Impact Metrics with Animated Numbers */}
+      <ImpactKpiSection />
+
       <section className="work-experience-section" id="experience">
         <div className="container work-experience-grid">
           <div className="work-experience-aside">
@@ -179,6 +184,9 @@ export default function WorkPage() {
           </div>
         </div>
       </section>
+
+      {/* Recharts Career Analytics & Project Visualizer */}
+      <ProjectGrowthVisualizer />
 
       <section className="about-closing-section">
         <div className="container about-closing-inner">

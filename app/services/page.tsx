@@ -1,5 +1,6 @@
 import Link from "next/link";
 import EngagementCarousel from "@/components/work/EngagementCarousel";
+import ServicesFAQ from "@/components/services/ServicesFAQ";
 import { createPageMetadata } from "@/lib/seo";
 
 export const metadata = createPageMetadata(
@@ -206,6 +207,9 @@ export default function ServicesPage() {
           <EngagementCarousel items={engagements} />
         </div>
       </section>
+
+      {/* Frequently Asked Questions (Consulting Process & Insurance Guidance) */}
+      <ServicesFAQ />
 
       <section className="cta">
         <div className="container">
